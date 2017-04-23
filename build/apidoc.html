@@ -1,0 +1,645 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/samselikoff/ember-cli-mirage"
+
+    >ember-cli-mirage (v0.3.1)</a>
+</h1>
+<h4>A client-side HTTP server to develop, test and demo your Ember app</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-mirage">module ember-cli-mirage</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage._lintMirageTree">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.</span>_lintMirageTree
+            <span class="apidocSignatureSpan">(mirageTree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage._shouldIncludeFiles">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.</span>_shouldIncludeFiles
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.blueprintsPath">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.</span>blueprintsPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.included">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.</span>included
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.treeFor">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.</span>treeFor
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.treeForApp">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.</span>treeForApp
+            <span class="apidocSignatureSpan">(appTree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-mirage.</span>index</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-mirage.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-mirage.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-mirage.index">module ember-cli-mirage.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.index._lintMirageTree">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>_lintMirageTree
+            <span class="apidocSignatureSpan">(mirageTree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.index._shouldIncludeFiles">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>_shouldIncludeFiles
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.index.blueprintsPath">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>blueprintsPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.index.included">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>included
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.index.treeFor">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>treeFor
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-mirage.index.treeForApp">
+            function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>treeForApp
+            <span class="apidocSignatureSpan">(appTree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-mirage" id="apidoc.module.ember-cli-mirage">module ember-cli-mirage</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage._lintMirageTree" id="apidoc.element.ember-cli-mirage._lintMirageTree">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.</span>_lintMirageTree
+        <span class="apidocSignatureSpan">(mirageTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_lintMirageTree = function (mirageTree) {
+  var lintedMirageTrees;
+  // _eachProjectAddonInvoke was added in ember-cli@2.5.0
+  // this conditional can be removed when we no longer support
+  // versions older than 2.5.0
+  if (this._eachProjectAddonInvoke) {
+    lintedMirageTrees = this._eachProjectAddonInvoke(&#x27;lintTree&#x27;, [&#x27;mirage&#x27;, mirageTree]);
+  } else {
+    lintedMirageTrees = this.project.addons.map(function(addon) {
+      if (addon.lintTree) {
+        return addon.lintTree(&#x27;mirage&#x27;, mirageTree);
+      }
+    }).filter(Boolean);
+  }
+
+  var lintedMirage = mergeTrees(lintedMirageTrees, {
+    overwrite: true,
+    annotation: &#x27;TreeMerger (mirage-lint)&#x27;
+  });
+
+  return new Funnel(lintedMirage, {
+    destDir: &#x27;tests/mirage/&#x27;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var trees = [ appTree ];
+  var mirageFilesTree = new Funnel(this.mirageDirectory, {
+    destDir: &#x27;mirage&#x27;
+  });
+  trees.push(mirageFilesTree);
+
+  if (this.hintingEnabled()) {
+    trees.push(this.<span class="apidocCodeKeywordSpan">_lintMirageTree</span>(mirageFilesTree));
+  }
+
+  return mergeTrees(trees);
+},
+
+_shouldIncludeFiles: function() {
+  if (process.env.EMBER_CLI_FASTBOOT) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage._shouldIncludeFiles" id="apidoc.element.ember-cli-mirage._shouldIncludeFiles">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.</span>_shouldIncludeFiles
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_shouldIncludeFiles = function () {
+  if (process.env.EMBER_CLI_FASTBOOT) {
+    return false;
+  }
+
+  var environment = this.app.env;
+  var enabledInProd = environment === &#x27;production&#x27; &#x26;&#x26; this.addonConfig.enabled;
+  var explicitExcludeFiles = this.addonConfig.excludeFilesFromBuild;
+  if (enabledInProd &#x26;&#x26; explicitExcludeFiles) {
+    throw new Error(&#x27;Mirage was explicitly enabled in production, but its files were excluded &#x27;
+                    + &#x27;from the build. Please, use only ENV[\&#x27;ember-cli-mirage\&#x27;].enabled in &#x27;
+                    + &#x27;production environment.&#x27;);
+  }
+  return enabledInProd || (environment &#x26;&#x26; environment !== &#x27;production&#x27; &#x26;&#x26; explicitExcludeFiles !== true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this.mirageDirectory = this.addonConfig.directory;
+  } else if (app.project.pkg[&#x27;ember-addon&#x27;] &#x26;&#x26; !app.project.pkg[&#x27;ember-addon&#x27;].paths) {
+    this.mirageDirectory = path.resolve(app.project.root, path.join(&#x27;tests&#x27;, &#x27;dummy&#x27;, &#x27;mirage&#x27;));
+  } else {
+    this.mirageDirectory = path.join(this.app.project.root, &#x27;/mirage&#x27;);
+  }
+
+  if (this.<span class="apidocCodeKeywordSpan">_shouldIncludeFiles</span>()) {
+    app.import(&#x27;vendor/ember-cli-mirage/pretender-shim.js&#x27;, {
+      type: &#x27;vendor&#x27;,
+      exports: { &#x27;pretender&#x27;: [&#x27;default&#x27;] }
+    });
+  }
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.blueprintsPath" id="apidoc.element.ember-cli-mirage.blueprintsPath">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.</span>blueprintsPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blueprintsPath = function () {
+  return path.join(__dirname, &#x27;blueprints&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.included" id="apidoc.element.ember-cli-mirage.included">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.</span>included
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function included() {
+  var app;
+
+  // If the addon has the _findHost() method (in ember-cli &#x3e;= 2.7.0), we&#x27;ll just
+  // use that.
+  if (typeof this._findHost === &#x27;function&#x27;) {
+    app = this._findHost();
+  } else {
+    // Otherwise, we&#x27;ll use this implementation borrowed from the _findHost()
+    // method in ember-cli.
+    var current = this;
+    do {
+      app = current.app || app;
+    } while (current.parent.parent &#x26;&#x26; (current = current.parent));
+  }
+
+  this.app = app;
+  this.addonConfig = this.app.project.config(app.env)[&#x27;ember-cli-mirage&#x27;] || {};
+  this.addonBuildConfig = this.app.options[&#x27;ember-cli-mirage&#x27;] || {};
+
+  // Call super after initializing config so we can use _shouldIncludeFiles for the node assets
+  this._super.included.apply(this, arguments);
+
+  if (this.addonBuildConfig.directory) {
+    this.mirageDirectory = this.addonBuildConfig.directory;
+  } else if (this.addonConfig.directory) {
+    this.mirageDirectory = this.addonConfig.directory;
+  } else if (app.project.pkg[&#x27;ember-addon&#x27;] &#x26;&#x26; !app.project.pkg[&#x27;ember-addon&#x27;].paths) {
+    this.mirageDirectory = path.resolve(app.project.root, path.join(&#x27;tests&#x27;, &#x27;dummy&#x27;, &#x27;mirage&#x27;));
+  } else {
+    this.mirageDirectory = path.join(this.app.project.root, &#x27;/mirage&#x27;);
+  }
+
+  if (this._shouldIncludeFiles()) {
+    app.import(&#x27;vendor/ember-cli-mirage/pretender-shim.js&#x27;, {
+      type: &#x27;vendor&#x27;,
+      exports: { &#x27;pretender&#x27;: [&#x27;default&#x27;] }
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.treeFor" id="apidoc.element.ember-cli-mirage.treeFor">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.</span>treeFor
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeFor = function (name) {
+  if (!this._shouldIncludeFiles()) {
+    return;
+  }
+
+  return this._super.treeFor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.treeForApp" id="apidoc.element.ember-cli-mirage.treeForApp">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.</span>treeForApp
+        <span class="apidocSignatureSpan">(appTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForApp = function (appTree) {
+  var trees = [ appTree ];
+  var mirageFilesTree = new Funnel(this.mirageDirectory, {
+    destDir: &#x27;mirage&#x27;
+  });
+  trees.push(mirageFilesTree);
+
+  if (this.hintingEnabled()) {
+    trees.push(this._lintMirageTree(mirageFilesTree));
+  }
+
+  return mergeTrees(trees);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-mirage.index" id="apidoc.module.ember-cli-mirage.index">module ember-cli-mirage.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.index._lintMirageTree" id="apidoc.element.ember-cli-mirage.index._lintMirageTree">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>_lintMirageTree
+        <span class="apidocSignatureSpan">(mirageTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_lintMirageTree = function (mirageTree) {
+  var lintedMirageTrees;
+  // _eachProjectAddonInvoke was added in ember-cli@2.5.0
+  // this conditional can be removed when we no longer support
+  // versions older than 2.5.0
+  if (this._eachProjectAddonInvoke) {
+    lintedMirageTrees = this._eachProjectAddonInvoke(&#x27;lintTree&#x27;, [&#x27;mirage&#x27;, mirageTree]);
+  } else {
+    lintedMirageTrees = this.project.addons.map(function(addon) {
+      if (addon.lintTree) {
+        return addon.lintTree(&#x27;mirage&#x27;, mirageTree);
+      }
+    }).filter(Boolean);
+  }
+
+  var lintedMirage = mergeTrees(lintedMirageTrees, {
+    overwrite: true,
+    annotation: &#x27;TreeMerger (mirage-lint)&#x27;
+  });
+
+  return new Funnel(lintedMirage, {
+    destDir: &#x27;tests/mirage/&#x27;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var trees = [ appTree ];
+  var mirageFilesTree = new Funnel(this.mirageDirectory, {
+    destDir: &#x27;mirage&#x27;
+  });
+  trees.push(mirageFilesTree);
+
+  if (this.hintingEnabled()) {
+    trees.push(this.<span class="apidocCodeKeywordSpan">_lintMirageTree</span>(mirageFilesTree));
+  }
+
+  return mergeTrees(trees);
+},
+
+_shouldIncludeFiles: function() {
+  if (process.env.EMBER_CLI_FASTBOOT) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.index._shouldIncludeFiles" id="apidoc.element.ember-cli-mirage.index._shouldIncludeFiles">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>_shouldIncludeFiles
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_shouldIncludeFiles = function () {
+  if (process.env.EMBER_CLI_FASTBOOT) {
+    return false;
+  }
+
+  var environment = this.app.env;
+  var enabledInProd = environment === &#x27;production&#x27; &#x26;&#x26; this.addonConfig.enabled;
+  var explicitExcludeFiles = this.addonConfig.excludeFilesFromBuild;
+  if (enabledInProd &#x26;&#x26; explicitExcludeFiles) {
+    throw new Error(&#x27;Mirage was explicitly enabled in production, but its files were excluded &#x27;
+                    + &#x27;from the build. Please, use only ENV[\&#x27;ember-cli-mirage\&#x27;].enabled in &#x27;
+                    + &#x27;production environment.&#x27;);
+  }
+  return enabledInProd || (environment &#x26;&#x26; environment !== &#x27;production&#x27; &#x26;&#x26; explicitExcludeFiles !== true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this.mirageDirectory = this.addonConfig.directory;
+  } else if (app.project.pkg[&#x27;ember-addon&#x27;] &#x26;&#x26; !app.project.pkg[&#x27;ember-addon&#x27;].paths) {
+    this.mirageDirectory = path.resolve(app.project.root, path.join(&#x27;tests&#x27;, &#x27;dummy&#x27;, &#x27;mirage&#x27;));
+  } else {
+    this.mirageDirectory = path.join(this.app.project.root, &#x27;/mirage&#x27;);
+  }
+
+  if (this.<span class="apidocCodeKeywordSpan">_shouldIncludeFiles</span>()) {
+    app.import(&#x27;vendor/ember-cli-mirage/pretender-shim.js&#x27;, {
+      type: &#x27;vendor&#x27;,
+      exports: { &#x27;pretender&#x27;: [&#x27;default&#x27;] }
+    });
+  }
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.index.blueprintsPath" id="apidoc.element.ember-cli-mirage.index.blueprintsPath">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>blueprintsPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blueprintsPath = function () {
+  return path.join(__dirname, &#x27;blueprints&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.index.included" id="apidoc.element.ember-cli-mirage.index.included">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>included
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function included() {
+  var app;
+
+  // If the addon has the _findHost() method (in ember-cli &#x3e;= 2.7.0), we&#x27;ll just
+  // use that.
+  if (typeof this._findHost === &#x27;function&#x27;) {
+    app = this._findHost();
+  } else {
+    // Otherwise, we&#x27;ll use this implementation borrowed from the _findHost()
+    // method in ember-cli.
+    var current = this;
+    do {
+      app = current.app || app;
+    } while (current.parent.parent &#x26;&#x26; (current = current.parent));
+  }
+
+  this.app = app;
+  this.addonConfig = this.app.project.config(app.env)[&#x27;ember-cli-mirage&#x27;] || {};
+  this.addonBuildConfig = this.app.options[&#x27;ember-cli-mirage&#x27;] || {};
+
+  // Call super after initializing config so we can use _shouldIncludeFiles for the node assets
+  this._super.included.apply(this, arguments);
+
+  if (this.addonBuildConfig.directory) {
+    this.mirageDirectory = this.addonBuildConfig.directory;
+  } else if (this.addonConfig.directory) {
+    this.mirageDirectory = this.addonConfig.directory;
+  } else if (app.project.pkg[&#x27;ember-addon&#x27;] &#x26;&#x26; !app.project.pkg[&#x27;ember-addon&#x27;].paths) {
+    this.mirageDirectory = path.resolve(app.project.root, path.join(&#x27;tests&#x27;, &#x27;dummy&#x27;, &#x27;mirage&#x27;));
+  } else {
+    this.mirageDirectory = path.join(this.app.project.root, &#x27;/mirage&#x27;);
+  }
+
+  if (this._shouldIncludeFiles()) {
+    app.import(&#x27;vendor/ember-cli-mirage/pretender-shim.js&#x27;, {
+      type: &#x27;vendor&#x27;,
+      exports: { &#x27;pretender&#x27;: [&#x27;default&#x27;] }
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.index.treeFor" id="apidoc.element.ember-cli-mirage.index.treeFor">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>treeFor
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeFor = function (name) {
+  if (!this._shouldIncludeFiles()) {
+    return;
+  }
+
+  return this._super.treeFor.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-mirage.index.treeForApp" id="apidoc.element.ember-cli-mirage.index.treeForApp">
+        function <span class="apidocSignatureSpan">ember-cli-mirage.index.</span>treeForApp
+        <span class="apidocSignatureSpan">(appTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForApp = function (appTree) {
+  var trees = [ appTree ];
+  var mirageFilesTree = new Funnel(this.mirageDirectory, {
+    destDir: &#x27;mirage&#x27;
+  });
+  trees.push(mirageFilesTree);
+
+  if (this.hintingEnabled()) {
+    trees.push(this._lintMirageTree(mirageFilesTree));
+  }
+
+  return mergeTrees(trees);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
